@@ -1,2 +1,2 @@
 # world-map-with-locations
-A world map based on leaflet with icons for the locations of institutions
+A world map based on leaflet with icons for the locations of institutions. Click on a location to see a popup naming the partner organizations. The map is zoomable, with detailed cultural info. 
