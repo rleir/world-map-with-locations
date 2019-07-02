@@ -20,11 +20,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
             if( feature.properties.popupContent) {
 			    popupContent += "<ul>";
-                feature.properties.popupContent.forEach(function(inst){
-			        popupContent += "<li>";
-			        popupContent += inst;
+                for(var key in feature.properties.popupContent) {
+                    popupContent += "<li>";
+			        popupContent += feature.properties.popupContent[key] + " - ";
+			        popupContent += key;
 			        popupContent += "</li>";
-                });
+                };
 			    popupContent += "</ul>";
 			}
         }
